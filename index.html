@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+      <meta charset="UTF-8">
+      <title>Quiz</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      
+      <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      
+      <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      
+      <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      
+      <script src="assets/javascript/script.js"></script>
+      
+        <audio id="beep">
+            <source src="assets/sound/hover.mp3">
+            <source src="assets/sound/hover.ogg">
+        </audio> 
+      
+        <audio id="correctAnswer">
+            <source src="assets/sound/correct.wav">
+        </audio> 
+      
+      <audio id="incorrectAnswer">
+            <source src="assets/sound/wrong.wav">
+        </audio> 
+      <audio id="clapping">
+            <source src="assets/sound/clapping.wav">
+        </audio>
+      <audio id="fail">
+            <source src="assets/sound/fail.wav">
+        </audio>
+      
+      <audio id="timeRunningOut">
+            <source src="assets/sound/clockTick.wav">
+        </audio>
+      
+      <audio id="buzzer">
+            <source src="assets/sound/buzzer.mp3">
+        </audio>
+      
+
+  </head>
+
+  <body>
+
+      <header><h1>Quizlet</h1></header>
+      
+      
+      <div class="container">
+          <aside>
+        
+            <div id="progress">
+                <div id="progressBar"><div id="bar"></div></div>
+                <h4>Progress <span id="ratio">1/10</span></h4>
+            </div>  
+          
+          <button id="reset" onclick="reset()">Reset</button>
+      
+        </aside>
+        <div id="flashCards">
+            <div id="timer">Time: <span id="time">20</span></div>
+            <div id="image">Topic: <br><span id="topic"></span></div>
+            <div id="question"></div> 
+            <div id="answers">
+                <ul>
+                    
+                </ul>  
+                 
+            </div>
+          </div>
+          
+          <div id="info" class="invisible">
+          
+              
+              
+              <div id="infoImage">Topic: <br><span id="infoTopic"></span></div>
+              
+              <div id="correct"> <h1>Answer:  </h1><h2><span id="answer"></span></h2>
+              </div>
+              <div id="infoStatus"></div>
+          
+          </div>
+        </div>  
+
+      
+  </body>
+
+</html>
