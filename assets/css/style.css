@@ -3,7 +3,7 @@
 }
 body {
     font-family: 'Indie Flower', cursive;
-    background-image: url("/assets/images/background4.jpg");
+    background-image: url("../images/background4.jpg");
     background-repeat: no-repeat;
 }
 header {
