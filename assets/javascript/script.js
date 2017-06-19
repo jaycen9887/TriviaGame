@@ -217,7 +217,7 @@ function endQuiz(){
     $("#flashCards").toggleClass("invisible");
     $("#infoTimer").html(" ");
     calcPercentage();
-    if (percentage > 70){
+    if (percentage >= 70){
         color = "#6CD242";
         var audio = document.getElementById("clapping");
         audio.play();
